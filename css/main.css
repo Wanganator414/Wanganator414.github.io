@@ -42,3 +42,6 @@ ul.posts li {
     list-style: none;
 }
 
+#githubIcon:hover{
+background-color:lightgrey;
+}
