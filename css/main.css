@@ -1,95 +1,43 @@
-p {
-    text-align: center;
-    font-family: monospace;
-    color: black;
-    font-size: 24px;
+body {
+    margin: 60px auto;
+    width: 70%;
 }
-a:hover{
-    font-style: italic;
+nav ul, footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
 }
-/*comment example*/
-
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+    color: #999;
+}
+a:hover {
+    text-decoration: underline;
+}
 h1 {
-    text-align: center;
-    font-family: monospace;
-    color: black;
-    font-size: 32px;
+    font-size: 3em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+p {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #333;
+}
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
 }
 
-ol {
-    text-align: center;
-    list-style-position: inside;
-    align-content: center;
-    align-items: center;
-    font-family: monospace;
-    color: black;
-    font-size: 20px;
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
 }
 
-header {
-    align-content: center;
-    align-self: center;
-    text-align: center;
-}
-
-section {
-    margin: auto;
-    text-align: center;
-    background-position: cover;
-    box-align: center;
-    font-family: monospace;
-    size: 5%;
-    color: black;
-    font-size: 24px;
-    background-color: silver;
-    width: 600px;
-    height: 600px;
-}
-section:active{
-    background-color: salmon;
-}
-
-#test_content {
-    margin: auto;       /*auto margin centers block level elements */
-    width:500px;
-    color: red;
-    background-color: green;
-}
-
-@viewport {
-    zoom: 1.0;
-    width: extend-to-zoom;
-}
-
-li {
-    list-style-image: url(https://d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2015-01-24/36ad272d0407c6b26d6707fcbe435962.ico);
-}
-
-table {
-    border-collapse: separate;
-}
-
-.testTable {
-    border-collapse: separate;
-    align-content: center;
-}
-
-table, th, td {
-    padding: 15px;
-    border-bottom: 1px solid black;
-}
-
-tr:hover {
-    background-color: lightblue;
-}
-
-#table.overflow-auto {
-    overflow: auto;
-}
-
-#table div{     /*id access using #, has highest precedence disregarding order*/
-    width: 20px;
-    height: 200px;
-    background-position: fixed;
-    background-position: right;
+ul.posts li {
+    list-style: none;
 }
