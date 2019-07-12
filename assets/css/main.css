@@ -1,12 +1,12 @@
 body {
     margin: 60px auto;
-    width: 70%;
-    background-color:grey;
+    width: 65%;
+    background-color: #C8C8CD;
 }
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'Ubuntu', 'Roboto', 'Sans-Serif';
     padding: 0px;
-    color:orange;
+    color:black;
     list-style: none;
     font-weight: bold;
 }
@@ -16,7 +16,7 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: orangered;
+    color: orange;
 }
 a:hover {
     text-decoration: underline;
@@ -24,15 +24,15 @@ a:hover {
 }
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'HUbuntu', 'Roboto', 'Sans-Serif';
 }
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: orange;
+    color: black;
 }
 footer {
-    border-top: 1px solid #d5d5d5;
+    border-top: 1px solid #d68f0b;
     font-size: .8em;
 }
 
