@@ -4,4 +4,3 @@ permalink: /blog/:year/:month/:day/:title
 
 
 #Build Settings
-theme:minima
