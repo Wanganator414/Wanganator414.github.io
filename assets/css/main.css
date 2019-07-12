@@ -66,11 +66,10 @@ margin-right: 30px;
 }
 
 hr{
-height:1px; 
+height:2px; 
 border:none; 
 color:#000; 
 background-color:#000; 
-width:60%; 
 text-align:center; 
 margin: 0 auto;
 }
