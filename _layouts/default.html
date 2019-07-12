@@ -1,35 +1,47 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
-			<link rel='shortcut icon' type='image/x-icon'
-    href="/assets/favicon.ico" />
-			<!-- plug ins go here-->
-			<script type="text/javascript" src="_includes/googleAnalytics.js"></script>
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-				<img id="faviconImage" src="/assets/images/android-chrome-512x512.png" width="40px" title="Icon">
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-				<hr class="hDivider">
-			</nav>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:ewang414@gmail.com"><img id="emailIcon" alt="Email" src="/assets/email.png" title="Email" ></a></li>
-	        		<li><a href="https://github.com/wanganator414"> <img id="githubIcon" alt="GitHub Link" src="/assets/GitHub-Mark-32px.png" width="15px" title="GitHub"></a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+<html>
+
+<head>
+    <title>{{ page.title }}</title>
+    <!-- link to main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <link rel='shortcut icon' type='image/x-icon' href="/assets/favicon.ico" />
+    <!-- plug ins go here-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143779624-1"></script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-143779624-1');
+    </script>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <img id="faviconImage" src="/assets/images/android-chrome-512x512.png" width="40px" title="Icon">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/cv">CV</a></li>
+            <li><a href="/blog">Blog</a></li>
+        </ul>
+        <hr class="hDivider">
+    </nav>
+    <div class="container">
+
+        {{ content }}
+
+    </div><!-- /.container -->
+    <footer>
+        <ul>
+            <li><a href="mailto:ewang414@gmail.com"><img id="emailIcon" alt="Email" src="/assets/email.png"
+                        title="Email"></a></li>
+            <li><a href="https://github.com/wanganator414"> <img id="githubIcon" alt="GitHub Link"
+                        src="/assets/GitHub-Mark-32px.png" width="15px" title="GitHub"></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
