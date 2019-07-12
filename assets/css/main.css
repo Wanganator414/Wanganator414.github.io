@@ -1,7 +1,7 @@
 body {
     margin: 60px auto;
     width: 65%;
-    background-color: #C8C8CD;
+    background-color: white;
 }
 nav ul, footer ul {
     font-family:'Ubuntu', 'Roboto', 'Sans-Serif';
@@ -32,8 +32,8 @@ p {
     color: black;
 }
 footer {
-    border-top: 1px solid #d68f0b;
-    font-size: .8em;
+    border-top: 2px solid black;
+    font-size: .9em;
 }
 
 ul.posts { 
