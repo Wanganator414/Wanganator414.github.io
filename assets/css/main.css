@@ -60,7 +60,7 @@ ul.posts li {
   margin: 0 auto;
 }
 
-#githubIcon:hover,#emailIcon:hover, a:hover {
+#githubIcon:hover,#emailIcon:hover, #linkedInIcon:hover, a:hover {
   transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
