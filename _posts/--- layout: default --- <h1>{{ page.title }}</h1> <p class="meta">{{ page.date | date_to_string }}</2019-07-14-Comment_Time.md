@@ -1,8 +1,8 @@
 ---
 layout: post
 comments:true
-title: "testBlog"
-date: 2019-07-10
+title: "Comment Time"
+date: 2019-07-14
 ---
 Almost done finalizing everything for the site, just added a neat little Disqus comment section (that hopefully is displayed at the bottom).
 
