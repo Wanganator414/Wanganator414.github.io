@@ -8,3 +8,7 @@ comments: true
 <div class="post">
   {{ content }}
 </div>
+
+{% if page.comments %}
+  {% include disqus.html %}	 
+{% endif %}
