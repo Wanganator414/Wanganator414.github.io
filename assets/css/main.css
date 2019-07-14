@@ -80,6 +80,7 @@ margin: 0 auto;
 .bioPage {
     display: flex;
     &__image {
+        border-radius:5px;
         margin-right: 40px;
         object-fit: contain;
         align-self: flex-start;
