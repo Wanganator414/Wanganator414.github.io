@@ -4,6 +4,7 @@ body {
     background-color: white;
 }
 nav ul, footer ul {
+    overflow: hidden;
     font-family:'Ubuntu', 'Roboto', 'Sans-Serif';
     padding: 0px;
     color:black;
