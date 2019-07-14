@@ -15,6 +15,6 @@ Making it work wasn't too bad:
 
 4. Edit the embed code according to the comment hints and save it.
 
-5. Go to your **_layouts** folder and add **`{% include disqus.html %}`**	right under **`{{content}}`** in your **post.html** file.
+5. Go to your **_layouts** folder and add ``{% include disqus.html %}``	right under ``{{content}}`` in your **post.html** file (or within a <div> tag).
 
 Make sure your blog posts are using the **post** layout instead of the **default** layout in the setup area and you should be good to go.
