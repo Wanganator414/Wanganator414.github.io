@@ -1,6 +1,5 @@
 ---
 layout: post
-comments:true
 title: "Comment Time"
 date: 2019-07-14
 ---
