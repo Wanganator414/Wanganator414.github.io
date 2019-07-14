@@ -74,13 +74,18 @@ text-align:center;
 margin: 0 auto;
 }
 
-#bioImage{
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  max-width: 100%;
-  height: auto;
-}
-#bioPageConetent{
-text-align: center;
+.bioPage{
+    border: 3px solid blue;
+    padding: 20px 40px 40px;
+    max-width: 640px;
+    display: flex;
+    &__image {
+        margin: 20px 30px 0 0;
+        width: 200px;
+        object-fit: contain;
+        align-self: flex-start;
+    }
+    &__text {
+        flex: 1 1 auto;
+    }
 }
