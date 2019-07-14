@@ -26,7 +26,7 @@ a:hover {
 }
 h1 {
     font-size: 3em;
-    font-family:'HUbuntu', 'Roboto', 'Sans-Serif';
+    font-family:'Ubuntu', 'Roboto', 'Sans-Serif';
 }
 p {
     font-size: 1.5em;
@@ -54,7 +54,7 @@ ul.posts li {
     list-style: none;
 }
 
-#githubIcon,#emailIcon,a {
+#githubIcon,#emailIcon,#linkedInIcon:hover,a {
   padding: 1px;
   transition: transform .2s; /* Animation */
   margin: 0 auto;
