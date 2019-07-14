@@ -9,6 +9,8 @@ comments: true
   {{ content }}
 </div>
 
-{% if page.comments %}
+<div class="commentSection">
+  {% if page.comments %}
   {% include disqus.html %}	 
 {% endif %}
+</div>
