@@ -7,9 +7,9 @@ comments: true
 
 Just added some Google Analytics tracking for the site today, now I can see how many times I visit my own site each day (for my own entertainment).
 
-Well, if you plan to do the same for your own Github hosted site, it's fairly simple:
+Well, if you plan to do the same for your own Github hosted site, it's free and fairly simple:
 
-1. First go visit [Google Analytics](https://support.google.com/analytics/answer/1008015?hl=en) and sign up for an account.
+1. First go visit [Google Analytics](https://support.google.com/analytics/answer/1008015?hl=en){:target="_blank"} and sign up for an account.
 
 2. Once you're done with account registration there should be an **admin** button at the bottom left corner of your dashboard screen, click on that and head to **Tracking Info**, then **Tracking Code**, copy the code, you will need it later.
 
