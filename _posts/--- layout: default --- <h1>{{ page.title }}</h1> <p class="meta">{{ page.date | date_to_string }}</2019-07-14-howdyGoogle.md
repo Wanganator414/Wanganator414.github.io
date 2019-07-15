@@ -15,8 +15,8 @@ Well, if you plan to do the same for your own Github hosted site, it's free and 
 
 3. Now that you have your code, create an html file called ```analytics.html``` in your ```_includes``` folder, paste the code in and save the file. 
 
-(if you don't have an ```_includes``` directory or are not sure what the heck that is, feel free to refer to [this article](https://github.com/barryclark/jekyll-now) on setting up Github Pages with Jeykll)
-
 4. Now go to your ```_layouts``` directory and add ```{%raw%}{% include analytics.html %}{%endraw%}``` inside your ```default.html``` file's ```head``` tags.
+
+If you don't have an ```_includes``` directory or are not sure what the heck that is, feel free to refer to [this article](https://github.com/barryclark/jekyll-now) on setting up Github Pages with Jeykll.
 
 Now make sure that all your anti-tracking plugins like Ghostery or adBlock are paused for your site if you want to run a quick test to see if Google is picking up on your site traffic.
