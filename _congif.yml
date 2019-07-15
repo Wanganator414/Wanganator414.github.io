@@ -1,6 +1,6 @@
 name: Eric Wang
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
-
+timezone: CN
 
 #Build Settings
