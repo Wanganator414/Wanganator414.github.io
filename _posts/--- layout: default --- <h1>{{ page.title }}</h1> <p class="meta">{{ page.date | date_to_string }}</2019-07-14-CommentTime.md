@@ -9,7 +9,7 @@ Almost done finalizing everything for the site, just added a neat little Disqus 
 
 Making it work wasn't too bad:
 
-1. First head over to [Disqus](https://disqus.com) and get a free subscription and follow the steps for your specific site hosting platform.
+1. First head over to [Disqus](https://disqus.com){:target="_blank"} and get a free subscription and follow the steps for your specific site hosting platform.
 
 2. For Jekyll, follow the Jekyll tutorial and remember to copy the universal embed code from the disqus site.
 
@@ -21,4 +21,4 @@ Making it work wasn't too bad:
 
 Make sure your blog posts are using the **post** layout instead of the **default** layout in the setup area and you should be good to go.
 
-<br>
+
