@@ -1,6 +1,6 @@
 ---
 layout: post
-title: " ༼ つ ◕_◕ ༽つ Howdy Google"
+title: "Howdy Google"
 date: 2019-07-15
 comments: true
 ---
