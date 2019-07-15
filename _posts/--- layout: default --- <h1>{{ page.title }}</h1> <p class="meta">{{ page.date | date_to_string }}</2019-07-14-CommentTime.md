@@ -4,6 +4,7 @@ title: "Comment Time"
 date: 2019-07-14
 comments:true
 ---
+
 Almost done finalizing everything for the site, just added a neat little Disqus comment section (that hopefully is displayed at the bottom).
 
 Making it work wasn't too bad:
