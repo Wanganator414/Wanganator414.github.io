@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Comment Time"
-comments:true
 date: 2019-07-14
+comments:true
 ---
 Almost done finalizing everything for the site, just added a neat little Disqus comment section (that hopefully is displayed at the bottom).
 
