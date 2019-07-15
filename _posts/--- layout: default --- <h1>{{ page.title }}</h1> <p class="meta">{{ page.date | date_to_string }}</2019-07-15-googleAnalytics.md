@@ -1,8 +1,8 @@
 ---
 layout: post
-comments: true
 title: " ༼ つ ◕_◕ ༽つ Howdy Google"
 date: 2019-07-15
+comments: true
 ---
 
 Just added some Google Analytics tracking for the site today, now I can see how many times I visit my own site each day (for my own entertainment).
