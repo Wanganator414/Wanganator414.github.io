@@ -79,19 +79,20 @@ margin: 0 auto;
 
 .bioPage {
     display: flex;
+    flex-wrap:nowrap;
     flex-direction: row; 
     justify-content: space-between;
+    align-content: center;
+    align-items: center;
     &__image {
-        border-radius:5px;
-        margin-right: 40px;
         object-fit: contain;
         align-self: flex-start;
-        flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ];
+        flex: 0 0 auto
         margin:10px; 
     }
     &__text {
-        flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ];
-        padding: 15px;
+        flex: 0 0 auto;
+        margin: 10px;
         border: black;
     }
 }
