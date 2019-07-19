@@ -93,6 +93,6 @@ margin: 0 auto;
     &__text {
         flex: 0 0 auto;
         margin: 10px;
-        border: black;
+        border-color: black;
     }
 }
