@@ -1,2 +1,4 @@
 # Wanganator414.github.io
-Personal Site :)
+
+**File Directories for my personal site**
+
