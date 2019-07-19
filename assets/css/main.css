@@ -84,15 +84,16 @@ margin: 0 auto;
     justify-content: space-around;
     align-content: center;
     align-items: center;
-    &__image {
+}
+.bioPage_image{
         object-fit: contain;
         align-self: flex-start;
         flex: 0 0 auto
         margin:10px; 
-    }
-    &__text {
+}
+.bioPage_text {
         flex: 0 0 auto;
         margin: 10px;
         border-color: black;
-    }
 }
+
