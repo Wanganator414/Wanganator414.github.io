@@ -81,7 +81,7 @@ margin: 0 auto;
     display: flex;
     flex-wrap:nowrap;
     flex-direction: row; 
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
     align-items: center;
     &__image {
