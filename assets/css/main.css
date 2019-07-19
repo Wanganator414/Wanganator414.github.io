@@ -1,6 +1,6 @@
 body {
-    margin: 60px auto;
-    width: 65%;
+    margin: 70px auto;
+    width: 70%;
     background-color: white;
 }
 nav ul, footer ul {
@@ -69,7 +69,7 @@ margin-right: 30px;
 }
 
 hr{
-height:2px; 
+height:3px; 
 border:none; 
 color:#000; 
 background-color:#000; 
@@ -90,7 +90,15 @@ margin: 0 auto;
         align-self: flex-start;
         flex: 0 0 auto
         margin:10px; 
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
 }
+
+.bioPage_image:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
 .bioPage_text {
         flex: 0 0 auto;
         margin: 10px;
