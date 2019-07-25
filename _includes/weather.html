@@ -1,8 +1,8 @@
 <script>
 let weatherData = document.querySelector("#weatherInfo");
   let url = "https://community-open-weather-map.p.rapidapi.com/weather?lat=38.54&lon=-121.74&id=2172797&units=%22metric%22+or+%22imperial%22&mode=json&q=Davis%2CUSA";
-  let json={};
-  
+  let json=null;
+  let holder = "";
   let params = {
   headers:{
   "X-RapidAPI-Host":"community-open-weather-map.p.rapidapi.com",
@@ -15,12 +15,14 @@ let weatherData = document.querySelector("#weatherInfo");
   fetch(url,params)
   .then(data=>{return data.json()})
   .then(res=>{
-    json= res;
+    holder=JSON.stringify(res);
+    json=res;
     console.log(res);
              })
   .catch(error=>{console.log(error)});
   
   console.log(json);
+  console.log(holder);
    //weatherData.innerHTML = result.body;
  
 </script>
