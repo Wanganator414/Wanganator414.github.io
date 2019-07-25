@@ -20,7 +20,7 @@ let weatherData = document.querySelector("#weatherInfo");
              })
   .catch(error=>{console.log(error)});
   
-  console.log(json['main']['temp']);
+  console.log(json['main'].temp);
    //weatherData.innerHTML = result.body;
  
 </script>
