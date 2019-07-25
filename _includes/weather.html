@@ -4,6 +4,6 @@ let weatherData = document.querySelector("#weatherInfo");
  $.getJson(url,function(result){
   alert(result);
    weatherData.innerHTML = result.body;
- }
+ });
  
 </script>
