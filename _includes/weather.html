@@ -1,9 +1,19 @@
 <script>
 let weatherData = document.querySelector("#weatherInfo");
   let url = "https://community-open-weather-map.p.rapidapi.com/weather?lat=38.54&lon=-121.74&callback=JSONP&id=2172797&units=%22metric%22+or+%22imperial%22&mode=json&q=Davis%2CUSA";
- jQuery.getJson(url,function(result){
-  alert(result);
-   weatherData.innerHTML = result.body;
+  let params = {
+  headers:{
+  "X-RapidAPI-Host":"community-open-weather-map.p.rapidapi.com",
+  "X-RapidAPI-Key":"0695836580msh59f7aa3e827ccd1p151d4ejsn50792a0af711"
+  },
+  method: "GET" 
+  }
+  fetch(url,params)
+  .then(data=>{return data.json()})
+  .then(res=>{console.log(res)})
+  .catch(error=>{console.log(error)});
+  
+   //weatherData.innerHTML = result.body;
  });
  
 </script>
