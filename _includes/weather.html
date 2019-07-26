@@ -1,4 +1,6 @@
 <script>
+  
+  let weatherData = () =>{
 let weatherData = document.querySelector("#weatherInfo");
   
   let url = "https://community-open-weather-map.p.rapidapi.com/weather?lat=38.54&lon=-121.74&id=2172797&units=%22metric%22+or+%22imperial%22&mode=json&q=Davis%2CUSA";
@@ -19,5 +21,26 @@ let weatherData = document.querySelector("#weatherInfo");
   
   console.log(json);
    //weatherData.innerHTML = result.body;
+    
+  }
  
+  
+  
+let curday = function(sp){
+let dateDisplay = document.querySelector("#dateDisplay");
+let today = new Date();
+let dd = today.getDate();
+let mm = today.getMonth()+1; //As January is 0.
+let yyyy = today.getFullYear();
+
+if(dd<10) dd='0'+dd;
+if(mm<10) mm='0'+mm;
+ dateDisplay.innerHTML=(mm+sp+dd+sp+yyyy);
+};
+//console.log(curday('-'));
+  
+let loadWeatherWidget = ()=>{
+curday('-');
+weatherData();
+}
 </script>
