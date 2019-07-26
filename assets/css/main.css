@@ -13,6 +13,7 @@ nav ul, footer ul {
 }
 nav ul li, footer ul li {
     display: inline;
+    text-align: center;
     margin-right: 20px;
 }
 a {
