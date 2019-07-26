@@ -14,9 +14,19 @@
   }
   
   fetch(url,params)
-  .then(response=>{response.json()})
-  .then(data=>{json=data.text; console.log(data);})
-  .catch(error=>{console.log(error)});
+  .then(response=>{
+    //return readable stream here
+    return response.json();
+  }) 
+  .then(data=>{
+    //work with JSON data here
+    json=JSON.parse(data);
+    console.log(data);
+  }) 
+  .catch(error=>{
+    //handle errors here
+    console.log(error);
+  })
   
   console.log(json);
    //weatherData.innerHTML = result.body;
