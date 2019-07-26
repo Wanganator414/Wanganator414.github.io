@@ -53,7 +53,7 @@ p a {
     align-items: center;
     background: orange;
     width: 155px;
-    height: 220px;
+    height: 210px;
     border: 4px solid black;
     border-radius: 4px;
     position: fixed;
@@ -63,12 +63,13 @@ p a {
 
 #weatherData>p, a, img {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    padding: 2px;
+    padding: 3px;
     margin: -5px;
 }
 
 #cityName {
     font-size: 24px;
+    font-weight: bold;
 }
 
 #weatherInfo {
@@ -78,6 +79,7 @@ p a {
 
 #dateDisplay {
     font-size: 20px;
+    font-weight: bold;
 }
 
 #weatherData>img {
