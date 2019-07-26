@@ -11,13 +11,13 @@ let weatherData = document.querySelector("#weatherInfo");
   method: "GET" 
   }
   
-  
   fetch(url,params)
-  .then(response=>response.json)
-  .then(response=>console.log(response))
+  .then(response=>response.json())
+  .then(response=>{console.log(response);
+                  json=response.body();})
   .catch(error=>{console.log(error)});
   
-  //console.log(json);
+  console.log(json);
    //weatherData.innerHTML = result.body;
  
 </script>
