@@ -1,9 +1,8 @@
 <script>
-  
+  let cookieHolder = document.cookies;
   let weatherData = () =>{
   let weatherInfo = document.querySelector("#weatherInfo");
   let url = "https://community-open-weather-map.p.rapidapi.com/weather?lat=38.54&lon=-121.74&id=2172797&units=%22metric%22+or+%22imperial%22&mode=json&q=Davis%2CUSA";
-  let json="";
   let params = {
   headers:{
   "X-RapidAPI-Host":"community-open-weather-map.p.rapidapi.com",
@@ -12,6 +11,8 @@
   method: "GET" 
   }
   
+  if (!window.name){  //if window.name is empty, then call weather API
+    console.log("GETting weather data");
   fetch(url,params)
   .then(response=>{
     //return readable stream here
@@ -19,13 +20,24 @@
   }) 
   .then(data=>{
     //work with JSON data here
+    //use window.name property to hold weather value as long as user uses same tab, avoid calling API for every page load
+    console.log("Saving data to window.name");
+    window.name=`${(data.main.temp-273.15).toFixed(1)}°C`;
+    
     weatherInfo.innerHTML = `${(data.main.temp-273.15).toFixed(1)}°C`;
+    
     console.log(data);
   }) 
   .catch(error=>{
     //handle errors here
     console.log(error);
   })
+  } 
+    else{
+      //if already called API once, then reuse window.name value
+      console.log("reused weather data");
+   weatherInfo.innerHTML = window.name;
+  }
 }
  
   
