@@ -129,6 +129,7 @@ ul.posts li {
 }
 
 #weatherIcon {
+    -webkit-filter: drop-shadow(5px 5px 5px #00FFFFFF);
     filter: drop-shadow(5px 5px 5px #00FFFFFF);
 }
 #faviconImage {
