@@ -74,16 +74,15 @@ ul.posts li {
     list-style: none;
 }
 
-#githubIcon:hover,#emailIcon:hover,#linkedInIcon:hover, a:hover {
+#githubIcon,#emailIcon,#linkedInIcon,a {
   padding: 1px;
   transition: transform .2s; /* Animation */
   margin: 0 auto;
 }
 
-#githubIcon:hover,#emailIcon:hover, #linkedInIcon:hover, a:hover{
+#githubIcon:hover,#emailIcon:hover, #linkedInIcon:hover, a:hover {
   transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-
 #weatherData:hover{
   padding: 1px;
   transition: transform .2s; /* Animation */
