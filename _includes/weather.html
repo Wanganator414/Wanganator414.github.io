@@ -1,7 +1,7 @@
 <script>
-  let weatherIcon = document.querySelector("#weatherIcon");
-  let weatherInfo = document.querySelector("#weatherInfo");
   let weatherData = () => {
+    let weatherIcon = document.querySelector("#weatherIcon");
+    let weatherInfo = document.querySelector("#weatherInfo");
     let url = "https://community-open-weather-map.p.rapidapi.com/weather?lat=38.54&lon=-121.74&id=2172797&units=%22metric%22+or+%22imperial%22&mode=json&q=Davis%2CUSA";
     let params = {
         headers: {
