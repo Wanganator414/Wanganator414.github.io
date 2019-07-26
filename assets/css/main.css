@@ -57,7 +57,12 @@ p a {
 #weatherData > p,a,img{
  font-family: "Trebuchet MS", Helvetica, sans-serif; 
  padding:2px;
- margin:-10px;
+ margin:-5px;
+}
+
+#weatherInfo{
+ font-size:12px;
+ font-weight:bold;
 }
 
 #weatherData > img{
