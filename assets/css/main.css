@@ -3,83 +3,98 @@ body {
     width: 70%;
     background-color: white;
 }
+
 nav ul, footer ul {
     overflow: hidden;
-    font-family:"Trebuchet MS", Helvetica, sans-serif; 
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     padding: 0px;
-    color:black;
+    color: black;
     list-style: none;
     font-weight: bold;
 }
+
 nav ul li, footer ul li {
     display: inline;
     text-align: center;
     margin-right: 20px;
 }
+
 a {
     text-decoration: none;
-    font-size:2em;
+    font-size: 2em;
     color: orange;
 }
+
 a:hover {
     text-decoration: underline;
     text-decoration: bold;
 }
+
 h1 {
     font-size: 3em;
-    font-family:"Trebuchet MS", Helvetica, sans-serif; 
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
+
 p {
     font-size: 1.5em;
     line-height: 1.4em;
     color: black;
 }
+
 p a {
     text-decoration: none;
-    font-size:1.6em;
+    font-size: 1.6em;
     color: orange;
 }
 
 #weatherData {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-  background: orange;
-  width: 155px;
-  height:205px;
-  border: 5px solid grey;
-  border-radius: 4px;
-  position:fixed;
-  left:2.5%;
-  top:40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: orange;
+    width: 155px;
+    height: 220px;
+    border: 4px solid black;
+    border-radius: 4px;
+    position: fixed;
+    left: 2.5%;
+    top: 40%;
 }
 
-#weatherData > p,a,img{
- font-family: "Trebuchet MS", Helvetica, sans-serif; 
- padding:2px;
- margin:-5px;
+#weatherData>p, a, img {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    padding: 2px;
+    margin: -5px;
 }
 
-#weatherInfo{
- font-size:12px;
- font-weight:bold;
+#cityName {
+    font-size: 24px;
 }
 
-#weatherData > img{
-width:50px;
-height:50px;
+#weatherInfo {
+    font-size: 18px;
+    font-weight: bold;
 }
 
+#dateDisplay {
+    font-size: 20px;
+}
+
+#weatherData>img {
+    width: 50px;
+    height: 50px;
+}
 
 footer {
     border-top: 2px solid black;
     font-size: .9em;
-    position: static;/* Updated Property */
-    bottom:0;
+    position: static;
+    /* Updated Property */
+    bottom: 0;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
+ul.posts {
+    margin: 20px auto 40px;
     font-size: 1.5em;
 }
 
@@ -87,63 +102,67 @@ ul.posts li {
     list-style: none;
 }
 
-#githubIcon,#emailIcon,#linkedInIcon,a {
-  padding: 1px;
-  transition: transform .2s; /* Animation */
-  margin: 0 auto;
+#githubIcon, #emailIcon, #linkedInIcon, a {
+    padding: 1px;
+    transition: transform .2s;
+    /* Animation */
+    margin: 0 auto;
 }
 
-#githubIcon:hover,#emailIcon:hover, #linkedInIcon:hover, a:hover {
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-#weatherData, #faviconImage{
-  padding: 1px;
-  transition: transform .3; /* Animation */
-  margin: 0 auto;
+#githubIcon:hover, #emailIcon:hover, #linkedInIcon:hover, a:hover {
+    transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-#weatherData:hover, #faviconImage:hover{
-transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */   
+#weatherData, #faviconImage {
+    padding: 1px;
+    transition: transform .3;
+    /* Animation */
+    margin: 0 auto;
 }
 
-#faviconImage{
-margin-right: 30px;
+#weatherData:hover, #faviconImage:hover {
+    transform: scale(1.1);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-hr{
-height:3px; 
-border:none; 
-color:#000; 
-background-color:#000; 
-text-align:center; 
-margin: 0 auto;
+#faviconImage {
+    margin-right: 30px;
+}
+
+hr {
+    height: 3px;
+    border: none;
+    color: #000;
+    background-color: #000;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .bioPage {
     display: flex;
-    flex-wrap:nowrap;
-    flex-direction: row; 
+    flex-wrap: nowrap;
+    flex-direction: row;
     justify-content: space-around;
     align-content: center;
     align-items: center;
 }
-.bioPage_image{
-        object-fit: contain;
-        align-self: flex-start;
-        flex: 0 0 auto
-        margin:10px; 
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        padding: 4px;
+
+.bioPage_image {
+    object-fit: contain;
+    align-self: flex-start;
+    flex: 0 0 auto margin:10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px;
 }
 
 .bioPage_image:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
 .bioPage_text {
-        flex: 0 0 auto;
-        margin: 10px;
-        border-color: black;
+    flex: 0 0 auto;
+    margin: 10px;
+    border-color: black;
 }
-
