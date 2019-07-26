@@ -53,11 +53,11 @@ p a {
     align-items: center;
     background: orange;
     width: 155px;
-    height: 210px;
+    height: 200px;
     border: 4px solid black;
     border-radius: 4px;
     position: fixed;
-    left: 2.5%;
+    left: 2%;
     top: 40%;
 }
 
@@ -152,8 +152,8 @@ hr {
 
 .bioPage_image {
     object-fit: contain;
-    align-self: flex-start;
-    flex: 0 0 auto margin:10px;
+    min-width: 20%;
+    min-height: 20%;
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 4px;
