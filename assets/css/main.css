@@ -38,6 +38,26 @@ p a {
     font-size:1.6em;
     color: orange;
 }
+
+#weatherData {
+  text-align:center;
+  background: orange;
+  width: 150px;
+  height:200px;
+  border: 5px solid grey;
+  border-radius: 4px;
+  position:absolute;
+  left:0%;
+  top:40%;
+  margin-left: 20px;
+}
+
+#weatherData > p,a,img{
+ font-family: "Trebuchet MS", Helvetica, sans-serif; 
+ padding:10px;
+}
+
+
 footer {
     border-top: 2px solid black;
     font-size: .9em;
@@ -54,13 +74,13 @@ ul.posts li {
     list-style: none;
 }
 
-#githubIcon,#emailIcon,#linkedInIcon:hover,a {
+#githubIcon:hover,#emailIcon:hover,#linkedInIcon:hover, a:hover, #weatherData:hover {
   padding: 1px;
   transition: transform .2s; /* Animation */
   margin: 0 auto;
 }
 
-#githubIcon:hover,#emailIcon:hover, #linkedInIcon:hover, a:hover {
+#githubIcon:hover,#emailIcon:hover, #linkedInIcon:hover, a:hover, #weatherData:hover {
   transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
