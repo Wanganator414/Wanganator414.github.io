@@ -14,8 +14,8 @@
   }
   
   fetch(url,params)
-  .then(response=>{response.json(); json=response.body;})
-  .then(response=>{console.log(response)})
+  .then(response=>{response.json()})
+  .then(data=>{json=data.text; console.log(data);})
   .catch(error=>{console.log(error)});
   
   console.log(json);
