@@ -1,6 +1,7 @@
 <script>
+  let weatherIcon = document.querySelector("#weatherIcon");
+  let weatherInfo = document.querySelector("#weatherInfo");
   let weatherData = () => {
-    let weatherInfo = document.querySelector("#weatherInfo");
     let url = "https://community-open-weather-map.p.rapidapi.com/weather?lat=38.54&lon=-121.74&id=2172797&units=%22metric%22+or+%22imperial%22&mode=json&q=Davis%2CUSA";
     let params = {
         headers: {
@@ -9,7 +10,7 @@
         },
         method: "GET"
     }
-
+    
     if (!window.name) {  //if window.name is empty, then call weather API
         console.log("Getting weather data");
         fetch(url, params)
@@ -21,10 +22,9 @@
                 //work with JSON data here
                 //use window.name property to hold weather value as long as user uses same tab, avoid calling API for every page load
                 console.log("Saving data to window.name");
-                window.name = `${(data.main.temp - 273.15).toFixed(1)}°C`;
-
-                weatherInfo.innerHTML = `${(data.main.temp - 273.15).toFixed(1)}°C`;
-
+                window.name= `${(data.weather[0].main)} and ${(data.main.temp - 273.15).toFixed(1)}°C ICON:${data.weather[0].icon}`;
+                weatherInfo.innerHTML = `${(data.weather[0].main)} and ${(data.main.temp - 273.15).toFixed(1)}°C`;
+                weatherIcon.src = "http://openweathermap.org/img/w/"+data.weather[0].icon+".png";
                 console.log(data);
             })
             .catch(error => {
@@ -35,7 +35,10 @@
     else {
         //if already called API once, then reuse window.name value
         console.log("Reuse weather data");
-        weatherInfo.innerHTML = window.name;
+        weatherInfo.innerHTML = window.name.substring(0,window.name.indexOf("ICON");
+                                                      //get weather icon
+        console.og("Reuse weather icon");
+        weatherIcon.src= "http://openweathermap.org/img/w/"+window.name.substring(window.name.indexOf(":"),window.name.length())+".png";
     }
 }
 
