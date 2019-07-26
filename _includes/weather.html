@@ -1,62 +1,60 @@
 <script>
-  let cookieHolder = document.cookies;
-  let weatherData = () =>{
-  let weatherInfo = document.querySelector("#weatherInfo");
-  let url = "https://community-open-weather-map.p.rapidapi.com/weather?lat=38.54&lon=-121.74&id=2172797&units=%22metric%22+or+%22imperial%22&mode=json&q=Davis%2CUSA";
-  let params = {
-  headers:{
-  "X-RapidAPI-Host":"community-open-weather-map.p.rapidapi.com",
-  "X-RapidAPI-Key":"0695836580msh59f7aa3e827ccd1p151d4ejsn50792a0af711"
-  },
-  method: "GET" 
-  }
-  
-  if (!window.name){  //if window.name is empty, then call weather API
-    console.log("GETting weather data");
-  fetch(url,params)
-  .then(response=>{
-    //return readable stream here
-    return response.json();
-  }) 
-  .then(data=>{
-    //work with JSON data here
-    //use window.name property to hold weather value as long as user uses same tab, avoid calling API for every page load
-    console.log("Saving data to window.name");
-    window.name=`${(data.main.temp-273.15).toFixed(1)}°C`;
-    
-    weatherInfo.innerHTML = `${(data.main.temp-273.15).toFixed(1)}°C`;
-    
-    console.log(data);
-  }) 
-  .catch(error=>{
-    //handle errors here
-    console.log(error);
-  })
-  } 
-    else{
-      //if already called API once, then reuse window.name value
-      console.log("Reuse weather data");
-   weatherInfo.innerHTML = window.name;
-  }
-}
- 
-  
-  
-let curday = function(sp){
-let dateDisplay = document.querySelector("#dateDisplay");
-let today = new Date();
-let dd = today.getDate();
-let mm = today.getMonth()+1; //As January is 0.
-let yyyy = today.getFullYear();
+  let weatherData = () => {
+    let weatherInfo = document.querySelector("#weatherInfo");
+    let url = "https://community-open-weather-map.p.rapidapi.com/weather?lat=38.54&lon=-121.74&id=2172797&units=%22metric%22+or+%22imperial%22&mode=json&q=Davis%2CUSA";
+    let params = {
+        headers: {
+            "X-RapidAPI-Host": "community-open-weather-map.p.rapidapi.com",
+            "X-RapidAPI-Key": "0695836580msh59f7aa3e827ccd1p151d4ejsn50792a0af711"
+        },
+        method: "GET"
+    }
 
-if(dd<10) dd='0'+dd;
-if(mm<10) mm='0'+mm;
- dateDisplay.innerHTML=(mm+sp+dd+sp+yyyy);
+    if (!window.name) {  //if window.name is empty, then call weather API
+        console.log("Getting weather data");
+        fetch(url, params)
+            .then(response => {
+                //return readable stream here
+                return response.json();
+            })
+            .then(data => {
+                //work with JSON data here
+                //use window.name property to hold weather value as long as user uses same tab, avoid calling API for every page load
+                console.log("Saving data to window.name");
+                window.name = `${(data.main.temp - 273.15).toFixed(1)}°C`;
+
+                weatherInfo.innerHTML = `${(data.main.temp - 273.15).toFixed(1)}°C`;
+
+                console.log(data);
+            })
+            .catch(error => {
+                //handle errors here
+                console.log(error);
+            })
+    }
+    else {
+        //if already called API once, then reuse window.name value
+        console.log("Reuse weather data");
+        weatherInfo.innerHTML = window.name;
+    }
+}
+
+
+
+let curday = function (sp) {
+    let dateDisplay = document.querySelector("#dateDisplay");
+    let today = new Date();
+    let dd = today.getDate();
+    let mm = today.getMonth() + 1; //As January is 0.
+    let yyyy = today.getFullYear();
+    if (dd < 10) dd = '0' + dd;
+    if (mm < 10) mm = '0' + mm;
+    dateDisplay.innerHTML = (mm + sp + dd + sp + yyyy);
 };
 //console.log(curday('-'));
-  
-let loadWeatherWidget = ()=>{
-curday('-');
-weatherData();
+
+let loadWeatherWidget = () => {
+    curday('-');
+    weatherData();
 }
 </script>
