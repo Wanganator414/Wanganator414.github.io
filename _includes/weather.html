@@ -19,7 +19,7 @@
   }) 
   .then(data=>{
     //work with JSON data here
-    weatherInfo.innerHTML = `${data.main.temp-273.15}°C`;
+    weatherInfo.innerHTML = `${(data.main.temp-273.15).toFixed(1)}°C`;
     console.log(data);
   }) 
   .catch(error=>{
