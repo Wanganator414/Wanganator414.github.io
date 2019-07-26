@@ -162,6 +162,7 @@ hr {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 4px;
+    background: #ffbf40;
 }
 
 .bioPage_image:hover {
@@ -169,6 +170,7 @@ hr {
 }
 
 .bioPage_text {
+    background: #ffbf40;
     margin-left: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
