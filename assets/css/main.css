@@ -47,9 +47,8 @@ p a {
   border: 5px solid grey;
   border-radius: 4px;
   position:fixed;
-  left:0%;
+  left:5%;
   top:40%;
-  margin-left: 20px;
 }
 
 #weatherData > p,a,img{
