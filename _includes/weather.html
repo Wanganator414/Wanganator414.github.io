@@ -14,7 +14,7 @@ let weatherData = document.querySelector("#weatherInfo");
   fetch(url,params)
   .then(response=>response.json())
   .then(response=>{console.log(response);
-                  json=response.body();})
+                  json=response.json();})
   .catch(error=>{console.log(error)});
   
   console.log(json);
