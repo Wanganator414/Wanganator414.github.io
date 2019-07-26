@@ -78,6 +78,9 @@ ul.posts li {
   padding: 1px;
   transition: transform .2s; /* Animation */
   margin: 0 auto;
+}
+
+#githubIcon:hover,#emailIcon:hover, #linkedInIcon:hover, a:hover{
   transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
@@ -85,7 +88,10 @@ ul.posts li {
   padding: 1px;
   transition: transform .2s; /* Animation */
   margin: 0 auto;
-  transform: scale(0.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */   
+}
+
+#weatherData:hover{
+transform: scale(0.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */   
 }
 
 #faviconImage{
