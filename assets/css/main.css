@@ -133,8 +133,8 @@ ul.posts li {
 }
 
 #weatherIcon {
-    -webkit-filter: drop-shadow(5px 5px 5px #00FFFFFF);
-    filter: drop-shadow(5px 5px 5px #00FFFFFF);
+    -webkit-filter: drop-shadow(1px 5px 1px rgba(255,165,0,0.2));
+    filter: drop-shadow(1px 5px 1px rgba(255,165,0,0.2));
 }
 #faviconImage {
     margin-right: 30px;
