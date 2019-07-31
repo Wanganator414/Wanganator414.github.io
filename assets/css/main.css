@@ -50,7 +50,7 @@ p a {
     color: orange;
 }
 
-/* Visuals for weather widget */
+/* Visuals for weather widget=================================================================================== */
 #weatherData {
     display: flex;
     flex-direction: column;
@@ -140,6 +140,13 @@ ul.posts li {
     margin-right: 30px;
 }
 
+#frontPageText{
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+padding: 3px;
+    font-size:24px;
+margin: -5px;
+background-color: orange;
+}
 hr {
     height: 3px;
     border: none;
