@@ -141,11 +141,13 @@ ul.posts li {
 }
 
 #frontPageText{
-font-family: "Trebuchet MS", Helvetica, sans-serif;
-padding: 3px;
-    font-size:24px;
-margin: -5px;
-background-color: orange;
+    background: #ffbf40;
+    margin-left: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 hr {
     height: 3px;
@@ -176,7 +178,7 @@ hr {
     background: #ffbf40;
 }
 
-.bioPage_image:hover, .bioPage_text:hover {
+.bioPage_image:hover, .bioPage_text:hover, #frontPageText {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
