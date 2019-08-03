@@ -60,6 +60,7 @@ The event loop checks if the **call stack** is empty and adds render jobs and ca
 The rendering queue is what updates the UI around 60 times per second, if **call stack** jobs are not cleared, then the render jobs cannot be inserted into the **call stack**, thus freezing the UI. By alleviating asynchronous callbacks into the **callback queue**, the **rendering queue** has a higher priority than the callback queue and will be able to update in between each callback job, thus making the UI still available for redraws and the user experience consistent.
 
 #
+
 If any of the above is not clear, feel free to refer to this [wonderful site](https://bit.ly/2KHMCR6){:target="_blank"} created by Philip Roberts which provides animated sequences of the JS runtime that will sure to clear out any confusions.
 
 
