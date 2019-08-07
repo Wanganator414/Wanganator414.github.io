@@ -4,6 +4,7 @@
         let weatherIcon = document.querySelector("#weatherIcon");
         let weatherInfo = document.querySelector("#weatherInfo");
         let url = "https://community-open-weather-map.p.rapidapi.com/weather?lat=38.54&lon=-121.74&id=2172797&units=%22metric%22+or+%22imperial%22&mode=json&q=Davis%2CUSA";
+        //informational obj to pass into fetch
         let params = {
             headers: {
                 "X-RapidAPI-Host": "community-open-weather-map.p.rapidapi.com",
@@ -11,7 +12,7 @@
             },
             method: "GET"
         }
-
+        //window.name persist upon reloads and across sites as long as its smae tab
         if (!window.name) {  //if window.name is empty, then call weather API
             console.log("Getting weather data");
             fetch(url, params)
@@ -20,8 +21,8 @@
                     return response.json();
                 })
                 .then(data => {
-                    //work with JSON data here
-                    //use window.name property to hold weather value as long as user uses same tab, avoid calling API for every page load
+               //work with JSON data here
+               //use window.name property to hold weather value as long as user uses same tab, avoid calling API for every page load
                     console.log("Saving data to window.name");
                     window.name = `${(data.weather[0].main)} and ${(data.main.temp - 273.15).toFixed(1)}°C ICON:${data.weather[0].icon}`;
                     weatherInfo.innerHTML = `${(data.weather[0].main)} and ${(data.main.temp - 273.15).toFixed(1)}°C`;
@@ -42,6 +43,7 @@
             weatherIcon.src = "http://openweathermap.org/img/w/" + window.name.substring(window.name.indexOf(":") + 1, window.name.length) + ".png";
         }
     }
+    
 let curday = function (sp) {
     let dateDisplay = document.querySelector("#dateDisplay");
     let today = new Date();
@@ -62,10 +64,7 @@ loadWeatherWidget();
 //=====================================================================  dragging code below
 let dragItem = document.querySelector("#weatherData");
 let active = false;
-let currentX;
-let currentY;
-let initialX;
-let initialY;
+let currentX,currentY,initialX,initialY;
 let xOffset = 0;
 let yOffset = 0;
 document.addEventListener("touchstart", dragStart, false);
