@@ -1,4 +1,4 @@
 # Wanganator414.github.io
 
-**File Directories for my personal site**
+**File,blogs,records, for my personal site.**
 
